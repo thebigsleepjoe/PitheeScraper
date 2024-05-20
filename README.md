@@ -10,7 +10,7 @@ Git clone or download this repo and have Python installed. No libraries are need
 
 To run: `python3 main.py <token> <nWinners> <nPosts>`
 
-NOTE: If you want >50 winners, you will need to wait a loooong time, as the API only allows us to fetch the last 50 winners. More on why this is can be seen below.
+NOTE: If you want >50 winners, you will need to wait a loooong time, as the API only allows us to fetch the last 50 winners. More on why this is can be seen below. Posts are acquired first, and it typically takes a very short amount of time to fetch this data in comparison.
 
 ## How to get your token
 
