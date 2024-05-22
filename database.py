@@ -34,7 +34,16 @@ def addEntriesToYaml(outfile, data):
     with open(outfile, "w", encoding='utf-8') as f:
         yaml.dump(merged_data, f, allow_unicode=True, default_flow_style=False)
 
-
+def createDataDir():
+    """
+    Create the data directory if it does not exist.
+    """
+    absPath = os.path.abspath("./data")
+    if not os.path.exists("./data"):
+        os.makedirs("./data")
+        print("Created data directory at full path: " + absPath)
+    else:
+        print("Data directory already exists at full path: " + absPath)
 
 def listToYaml(list):
     """

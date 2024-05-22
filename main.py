@@ -40,6 +40,9 @@ apiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6I
 #  --header 'apikey: <public key>' \
 #  --data '{}'
 
+print("Creating ./data directory if it does not exist.")
+db.createDataDir()
+
 
 USER_BEARER = "Bearer " + sys.argv[1]
 
