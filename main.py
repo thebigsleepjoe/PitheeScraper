@@ -26,8 +26,9 @@ print("By continuing, you agree to these facts.")
 print("Also, please note that your provided bearer token may be invalidated during execution due to naturally expiring. (typically lasts <=1hr)")
 print(f"We will try to fetch {NUM_WINNERS} winners and {NUM_POSTS} posts. The winners will take a very long time to fetch, but it does not require your personal token.")
 print("----------------------------------")
-print("")
-input("Press Enter to agree and continue. Otherwise, press Ctrl+C or cancel by some other means.")
+
+print("You have 10 seconds to cancel with CTRL+C or closing the terminal if you do not agree.")
+time.sleep(10)
 
 # I believe this is static. If it starts having auth issues then I will work on a proper API key resolver,
 # as the (anonymous) api key is immediately shared with anyone connecting to the main page w/o sign in.
